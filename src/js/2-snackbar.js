@@ -22,7 +22,8 @@ function createPromise(event) {
     })
     promise
         .then(value => { 
-            return iziToast.success({
+            console.log(value);
+            iziToast.success({
             title: 'OK',
             message: value,
             position: "topRight",
@@ -31,7 +32,8 @@ function createPromise(event) {
             transitionIn: "fadeInRight",
             });
         })
-    .catch(error => { 
+        .catch(error => { 
+        console.log(error)
             iziToast.error({
             title: "Error",
             message: error,
@@ -40,9 +42,10 @@ function createPromise(event) {
             theme: "dark",
             transitionIn: "fadeInRight",
             });
-    })
-    form.reset();
+        })
 }
 
-
 form.addEventListener("submit", createPromise);
+
+
+
