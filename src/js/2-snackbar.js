@@ -23,25 +23,25 @@ function createPromise(event) {
     promise
         .then(value => { 
             console.log(value);
-            iziToast.success({
-            title: 'OK',
-            message: value,
-            position: "topRight",
-            backgroundColor: "#59a10d",
-            theme: "dark",
-            transitionIn: "fadeInRight",
-            });
+            // iziToast.success({
+            // title: 'OK',
+            // message: value,
+            // position: "topRight",
+            // backgroundColor: "#59a10d",
+            // theme: "dark",
+            // transitionIn: "fadeInRight",
+            // });
         })
         .catch(error => { 
         console.log(error)
-            iziToast.error({
-            title: "Error",
-            message: error,
-            position: "topRight",
-            backgroundColor: "#ef4040",
-            theme: "dark",
-            transitionIn: "fadeInRight",
-            });
+            // iziToast.error({
+            // title: "Error",
+            // message: error,
+            // position: "topRight",
+            // backgroundColor: "#ef4040",
+            // theme: "dark",
+            // transitionIn: "fadeInRight",
+            // });
         })
 }
 
