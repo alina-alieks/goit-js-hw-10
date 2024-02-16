@@ -2,6 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import iconError from "../img/icon-error.svg";
 
 
 const selector = document.querySelector("#datetime-picker");
@@ -27,6 +28,7 @@ const options = {
             messageSize: '16px',
             backgroundColor: '#ef4040',
             position: 'topRight',
+            iconUrl: iconError,
             // timeout: ''
           });  
         }

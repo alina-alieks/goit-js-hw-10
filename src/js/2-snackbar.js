@@ -2,8 +2,13 @@
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+import iconOk from "../img/icon-ok.svg";
+import iconError from "../img/icon-error.svg";
+
 
 const form = document.querySelector(".form");
+
+
 
 function createPromise(event) {
     event.preventDefault();
@@ -25,6 +30,7 @@ function createPromise(event) {
             iziToast.success({
             title: 'OK',
             message: value,
+            iconUrl: iconOk,
             position: "topRight",
             backgroundColor: "#59a10d",
             theme: "dark",
@@ -35,6 +41,7 @@ function createPromise(event) {
             iziToast.error({
             title: "Error",
             message: error,
+            iconUrl: iconError,
             position: "topRight",
             backgroundColor: "#ef4040",
             theme: "dark",
