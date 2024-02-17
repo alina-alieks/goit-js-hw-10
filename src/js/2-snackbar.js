@@ -35,6 +35,7 @@ function createPromise(event) {
             backgroundColor: "#59a10d",
             theme: "dark",
             transitionIn: "fadeInRight",
+            //  timeout: ''
             });
         })
         .catch(error => { 

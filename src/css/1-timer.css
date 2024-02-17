@@ -1,4 +1,5 @@
-#datetime-picker {
+#datetime-picker, 
+.flatpickr-mobile {
     font-family: "Montserrat", sans-serif;
     color: #2e2f42;
     font-weight: 400;
@@ -6,7 +7,7 @@
     line-height: 1.5;
     border: 1px solid #808080;
     border-radius: 4px;
-    width: 272px;
+    max-width: 272px;
     height: 40px;
     margin-right: 8px;
     letter-spacing: 0.04em;
@@ -15,21 +16,27 @@
 }
 
 #datetime-picker:active,
-#datetime-picker:focus {
+#datetime-picker:focus,
+.flatpickr-mobile:active,
+.flatpickr-mobile:focus {
     border-color: #4e75ff;
     color: #000;
 }
-#datetime-picker:hover {
+#datetime-picker:hover,
+.flatpickr-mobile:hover {
     border-color: #000;
 }
-#datetime-picker:disabled {
+#datetime-picker:disabled,
+.flatpickr-input:disabled {
     background-color: #fafafa;
     color: #808080;
     border-color: #808080;
+    pointer-events: none;
 }
 
 
-#datetime-picker + button {
+#datetime-picker + button,
+.flatpickr-mobile + button {
     display: inline-block;
     border: none;
     border-radius: 8px;
@@ -44,12 +51,15 @@
     color: #ffffff;
 }
 
-#datetime-picker + button:disabled {
+#datetime-picker + button:disabled,
+.flatpickr-mobile + button:disabled {
     background-color: #cfcfcf;
     color: #989898;
 }
 #datetime-picker + button:hover,
-#datetime-picker + button:focus {
+#datetime-picker + button:focus,
+.flatpickr-mobile + button:hover,
+.flatpickr-mobile + button:focus {
     background-color: #6c8cff;
 }
 
@@ -81,4 +91,9 @@ section a {
     display: block;
     color: #989898;
     margin-bottom: 52px;
+}
+
+.iziToast.iziToast-theme-dark .iziToast-message {
+    font-family: "Montserrat",
+        sans-serif;
 }
