@@ -7,12 +7,15 @@
     line-height: 1.5;
     border: 1px solid #808080;
     border-radius: 4px;
-    max-width: 272px;
+    width: 280px;
     height: 40px;
     margin-right: 8px;
     letter-spacing: 0.04em;
     padding: 8px 0 8px 16px;
     outline: none;
+}
+.flatpickr-mobile {
+    max-width: 280px;
 }
 
 #datetime-picker:active,
@@ -97,3 +100,11 @@ section a {
     font-family: "Montserrat",
         sans-serif;
 }
+
+/* div .flatpickr-calendar,
+div .flatpickr-days,
+div .dayContainer {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+} */
